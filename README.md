@@ -9,3 +9,11 @@ Welcome to my personal portfolio website repository! This project showcases my B
 <li>Client: A showcase about companies I have worked with</li>
 <li>Contact: Information on how to get in touch with me, including social media links and a contact form.</li>
 </ul>
+
+<h1>Technology Used</h1>
+<ul>
+<li>Frontend: HTML, CSS, JavaScript, TailwindCSS Framework</li>
+<li>Other Tool: Git</li>
+</ul>
+
+<h1>Setup</h1>
