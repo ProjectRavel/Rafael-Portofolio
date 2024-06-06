@@ -9,7 +9,6 @@ Welcome to my personal portfolio website repository! This project is a comprehen
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## About
@@ -49,3 +48,17 @@ To run this project locally, follow these steps:
 4. **Run the project:**
    ```sh
    npm start
+
+## Usage
+To view the portfolio, simply open the index.html file in your web browser or run the project using the installation steps above. Explore different sections to learn more about my work, skills, and background.
+
+## Contributing
+Contributions are welcome! If you have any suggestions or improvements, please feel free to create an issue or submit a pull request.
+
+## Contact
+Feel free to reach out if you have any questions or opportunities:
+
+Email: [rafaelsumanti01@gmail.com](mailto:rafaelsumanti01@gmail.com)
+LinkedIn: [Rafaelcode Sumanti](https://www.linkedin.com/in/rafaelcode-sumanti-1b4363310/)
+Github: [ProjectRavel](https://github.com/projectravel)
+Thank you for visiting my portfolio!
