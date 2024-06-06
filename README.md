@@ -25,10 +25,7 @@ This repository contains the source code for my personal portfolio website. The 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **React** (if applicable)
-- **Bootstrap** (or any other framework/library you used)
-- **Node.js** (if applicable)
-- **Express** (if applicable)
+- **TailwindCSS**
 
 ## Installation
 To run this project locally, follow these steps:
