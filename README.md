@@ -27,6 +27,6 @@ To run this project locally, follow these steps:
 
 <ol>
   <li>Clone the repository:
-  ```sh git clone https://github.com/projectravel/rafael-portofolio```
+  ```bash git clone https://github.com/projectravel/rafael-portofolio ```
   </li>
 </ol>
