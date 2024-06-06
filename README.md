@@ -12,8 +12,21 @@ Welcome to my personal portfolio website repository! This project showcases my B
 
 <h1>Technology Used</h1>
 <ul>
-<li>Frontend: HTML, CSS, JavaScript, TailwindCSS Framework</li>
-<li>Other Tool: Git</li>
+<li>HTML5</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+<h2>Framwork:</h2>
+<ul>
+<li>TailwindCSS</li>
 </ul>
 
-<h1>Setup</h1>
+
+<h1>Installation & Setup</h1>
+To run this project locally, follow these steps:
+
+<ol>
+  <li>Clone the repository:
+  ```sh git clone https://github.com/projectravel/rafael-portofolio```
+  </li>
+</ol>
