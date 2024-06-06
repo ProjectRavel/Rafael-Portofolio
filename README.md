@@ -36,4 +36,16 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/projectravel/rafael-portofolio
+
+2. **Navigate to the project directory:**
+   ```sh
+   cd Rafael-Portofolio
+
+3. **Install dependencies:**
+   ```sh
+   npm install
+
+4. **Run the project:**
+   ```sh
+   npm start
