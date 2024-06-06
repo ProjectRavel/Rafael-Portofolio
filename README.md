@@ -26,7 +26,8 @@ Welcome to my personal portfolio website repository! This project showcases my B
 To run this project locally, follow these steps:
 
 <ol>
-  <li>Clone the repository:
-  ```bash git clone https://github.com/projectravel/rafael-portofolio ```
+  <li>Clone the repository:  
   </li>
+```bash git clone https://github.com/projectravel/rafael-portofolio ```
+
 </ol>
