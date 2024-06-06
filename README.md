@@ -59,6 +59,9 @@ Contributions are welcome! If you have any suggestions or improvements, please f
 Feel free to reach out if you have any questions or opportunities:
 
 Email: [rafaelsumanti01@gmail.com](mailto:rafaelsumanti01@gmail.com)
+
 LinkedIn: [Rafaelcode Sumanti](https://www.linkedin.com/in/rafaelcode-sumanti-1b4363310/)
+
 Github: [ProjectRavel](https://github.com/projectravel)
+
 Thank you for visiting my portfolio!
