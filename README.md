@@ -1,19 +1,64 @@
-<h1>Personal Portfolio Website</h1>
-Welcome to my personal portfolio website repository! This project showcases my Background , Skill, Project, and experiences as a Web Programmer, 2D/3D Design, and Student.
+# Personal Portfolio Website
 
-<h1>Features</h1>
-<ul>
-<li>Skill & Background: Learn more about my background, education, and interests.</li>
-<li>Project: A showcase of the projects I have worked on, including descriptions, technologies used, and links to live demos or repositories.</li>
-<li>Skills: An overview of my technical and soft skills.</li>
-<li>Client: A showcase about companies I have worked with</li>
-<li>Contact: Information on how to get in touch with me, including social media links and a contact form.</li>
-</ul>
+Welcome to my personal portfolio website repository! This project is a comprehensive showcase of my skills, projects, and experiences as a web developer and designer. The website is designed to provide a detailed overview of my professional background, featuring work samples, a downloadable resume, and contact information.
 
-<h1>Technology Used</h1>
-<ul>
-<li>Frontend: HTML, CSS, JavaScript, TailwindCSS Framework</li>
-<li>Other Tool: Git</li>
-</ul>
+## Table of Contents
+- [About](#about)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-<h1>Setup</h1>
+## About
+This repository contains the source code for my personal portfolio website. The site serves as a digital resume and project showcase, highlighting my abilities and achievements in a user-friendly and visually appealing manner. It is designed to reflect my professional journey, skills, and the projects I have worked on.
+
+## Features
+- **Responsive Design:** The website is fully responsive and optimized for different screen sizes, including mobile devices.
+- **Interactive UI:** Engaging user interface with smooth animations and interactive elements.
+- **Projects Showcase:** Detailed descriptions and links to my significant projects, showcasing my work and skills.
+- **Resume Section:** Downloadable version of my resume available.
+- **Contact Form:** Easy-to-use contact form for getting in touch with me directly through the website.
+
+## Technologies Used
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **TailwindCSS**
+
+## Installation
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/projectravel/rafael-portofolio
+
+2. **Navigate to the project directory:**
+   ```sh
+   cd Rafael-Portofolio
+
+3. **Install dependencies:**
+   ```sh
+   npm install
+
+4. **Run the project:**
+   ```sh
+   npm start
+
+## Usage
+To view the portfolio, simply open the index.html file in your web browser or run the project using the installation steps above. Explore different sections to learn more about my work, skills, and background.
+
+## Contributing
+Contributions are welcome! If you have any suggestions or improvements, please feel free to create an issue or submit a pull request.
+
+## Contact
+Feel free to reach out if you have any questions or opportunities:
+
+Email: [rafaelsumanti01@gmail.com](mailto:rafaelsumanti01@gmail.com)
+
+LinkedIn: [Rafaelcode Sumanti](https://www.linkedin.com/in/rafaelcode-sumanti-1b4363310/)
+
+Github: [ProjectRavel](https://github.com/projectravel)
+
+Thank you for visiting my portfolio!
