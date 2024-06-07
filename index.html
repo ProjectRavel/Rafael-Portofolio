@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="dist/output.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        } else {
+        document.documentElement.classList.remove('dark')
+        }
+    </script>
     <style>
         .transition-all {
             transition: all 0.3s ease-in-out;
@@ -31,22 +37,34 @@
                         <span class="hamburger-line transition-all ease-in-out duration-300"></span>
                         <span class="hamburger-line transition-all ease-in-out duration-300"></span>
                     </button>
-                    <nav id="navmenu" class="hidden absolute bg-white shadow-lg py-5 rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:max-w-full lg:bg-transparent lg:static lg:shadow-transparent transition-all duration-300 ease-in-out">
+                    <nav id="navmenu" class="hidden absolute bg-white shadow-lg py-5 rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:max-w-full lg:bg-transparent lg:static lg:shadow-transparent transition-all duration-300 ease-in-out dark:bg-dark lg:dark:bg-transparent dark:shadow-xl dark:shadow-gray-900 lg:dark:shadow-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
                             </li>
                             <li class="group">
-                                <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                                <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Clients</a>
+                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Clients</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Kontak</a>
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Kontak</a>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="flex pl-8">
+                                    <span class="mr-2 text-sm text-slate-500">light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle" onclick="darkfunction()">
+                                    <label for="dark-toggle">
+                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div class="w-4 h-4 rounded-full bg-white transition duration-300 ease-in-out" id="togglebutton"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -57,7 +75,7 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 transition-all">
+    <section id="home" class="pt-36 transition-all dark:bg-dark">
         <div class="mx-auto container transition-all">
             <!--If there is a bug! (Make this class to container)-->
             <!-- Hero Section 1 -->
@@ -65,7 +83,7 @@
                 <div class="w-full self-center px-4 md:w-1/2 transition-all">
                     <h1 class="font-bold text-primary text-base lg:text-lg xl:text-xl xl:mb-2 transition-all">
                         Halo Semua👋, Saya
-                        <span class="text-4xl block text-dark lg:text-[44px] xl:text-[56px]">
+                        <span class="text-4xl block text-dark lg:text-[44px] xl:text-[56px] dark:text-white">
                             Rafael Pandu S.</span>
                     </h1>
                     <h2 class="font-medium text-secondary mb-5 text-lg lg:text-xl xl:text-2xl"><span class="auto-typed"></span></h2>
@@ -102,13 +120,13 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-10 transition-all">
+    <section id="about" class="pt-10 transition-all dark:bg-dark">
         <div class="container transition-all">
             <div class="flex flex-wrap transition-all">
                 <!-- About Section 1 Start-->
                 <div class="w-full px-4 mb-12 md:w-1/2 transition-all">
                     <h4 class="font-bold text-primary uppercase text-lg mb-4 transition-all">About Me</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-3">
+                    <h2 class="font-bold text-dark text-3xl mb-3 dark:text-white">
                         Skill & Background
                     </h2>
                     <p class="max-w-xl font-medium text-secondary text-justify transition-all">
@@ -125,7 +143,7 @@
 
                 <!-- About Section 2 Start -->
                 <div class="w-full px-4 md:w-1/2 md:mt-12 transition-all">
-                    <h3 class="font-medium text-dark text-3xl mb-3" id="contact transition-all">Contact Me</h3>
+                    <h3 class="font-medium text-dark text-3xl mb-3 dark:text-white" id="contact transition-all">Contact Me</h3>
                     <p class="max-w-xl font-medium text-secondary text-justify mb-6 transition-all">
                         Saya selalu terbuka untuk berdiskusi tentang proyek baru, peluang
                         kolaborasi, atau pertanyaan seputar bidang yang saya tekuni. Anda
@@ -164,13 +182,13 @@
     <!-- About Section End -->
 
     <!-- Portofolio Section Start -->
-    <section id="portfolio" class="pt-36 pb-16 transition-all">
-        <div class="w-full px-4 bg-slate-100 transition-all">
+    <section id="portfolio" class="pt-36 pb-16 w-full px-4 bg-slate-100 transition-all dark:bg-slate-800">
+        <div class="">
             <div class="container transition-all">
                 <div class="w-full px-4 transition-all">
                     <div class="max-w-xl mx-auto text-center mb-16 transition-all" data-aos="fade-up">
                         <h4 class="font-bold text-primary uppercase text-lg mb-4 transition-all">Portfolio</h4>
-                        <h2 class="font-bold text-dark text-3xl mb-4 transition-all">Project Terbaru</h2>
+                        <h2 class="font-bold text-dark text-3xl mb-4 transition-all dark:text-white">Project Terbaru</h2>
                         <p class="text-secondary font-medium text-sm md:text-lg transition-all">Selama perjalanan saya menjadi web developer, saya telah mengerjakan beberapa proyek menarik yang membantu saya mengasah keterampilan dan memperdalam pemahaman saya tentang teknologi web. Berikut adalah beberapa di antaranya:</p>
                     </div>
                 </div>
@@ -180,7 +198,7 @@
                         <div class="rounded-xl shadow-md overflow-hidden transition-all">
                             <img src="img/netflix.png" alt="" width="w-full transition-all">
                         </div>
-                        <h3 class="font-semibold text-xl xl:text-2xl text-dark mt-5 mb-3 transition-all">Netflix Homepage</h3>
+                        <h3 class="font-semibold text-xl xl:text-2xl text-dark mt-5 mb-3 transition-all dark:text-white">Netflix Homepage</h3>
                         <p class="font-medium text-base text-secondary transition-all">Salah satu proyek yang paling menantang dan menarik yang saya kerjakan adalah Netflix Clone. Proyek ini memberikan saya kesempatan untuk mengaplikasikan berbagai teknologi dan keterampilan pengembangan web.</p>
                     </div>
     
@@ -188,7 +206,7 @@
                         <div class="rounded-xl shadow-md overflow-hidden transition-all">
                             <img src="img/lovecalc.png" alt="" width="w-full">
                         </div>
-                        <h3 class="font-semibold text-xl xl:text-2xl text-dark mt-5 mb-3 transition-all">Love Calculator</h3>
+                        <h3 class="font-semibold text-xl xl:text-2xl text-dark mt-5 mb-3 transition-all dark:text-white">Love Calculator</h3>
                         <p class="font-medium text-base text-secondary">Salah satu proyek menarik yang saya kerjakan adalah Love Calculator. Proyek ini adalah aplikasi web sederhana yang memungkinkan pengguna untuk menghitung kecocokan cinta antara dua nama. Proyek ini memberikan saya kesempatan untuk mengasah keterampilan dalam pengembangan front-end dan interaksi dengan pengguna.</p>
                     </div>
     
@@ -196,7 +214,7 @@
                         <div class="rounded-xl shadow-md overflow-hidden transition-all" data-aos="fade-right">
                             <img src="img/3D Thumbnail.png" alt="" width="w-full">
                         </div>
-                        <h3 class="font-semibold text-xl xl:text-2xl text-dark mt-5 mb-3">3D Blender Project</h3>
+                        <h3 class="font-semibold text-xl xl:text-2xl text-dark mt-5 mb-3 dark:text-white">3D Blender Project</h3>
                         <p class="font-medium text-base text-secondary transition-all">Salah satu proyek yang sangat saya banggakan adalah 3D Design dengan Blender. Proyek ini memberikan saya kesempatan untuk mengeksplorasi dunia desain tiga dimensi dan mengasah keterampilan dalam pembuatan model 3D.</p>
                     </div>
     
@@ -204,7 +222,7 @@
                         <div class="rounded-xl shadow-md overflow-hidden transition-all">
                             <img src="img/github.png" alt="" width="w-full">
                         </div>
-                        <h3 class="font-semibold text-xl xl:text-2xl transition-all text-dark mt-5 mb-3">Github Repository</h3>
+                        <h3 class="font-semibold text-xl xl:text-2xl transition-all text-dark mt-5 mb-3 dark:text-white">Github Repository</h3>
                         <p class="font-medium transition-all text-base text-secondary">Dalam Project Github ini saya mencoba membuat repository, Home Profile, dan Repository ini berisi kumpulan proyek yang telah saya kerjakan dalam perjalanan saya sebagai Programmer.</p>
                     </div>
                     
@@ -213,7 +231,7 @@
                             <div class="rounded-xl shadow-md overflow-hidden">
                                 <img src="img/gameproject.png" alt="" width="w-full">
                             </div>
-                            <h3 class="font-semibold text-xl xl:text-2xl text-dark mt-5 mb-3 transition-all">Game Project</h3>
+                            <h3 class="font-semibold text-xl xl:text-2xl text-dark mt-5 mb-3 transition-all dark:text-white">Game Project</h3>
                             <p class="font-medium text-base text-secondary">Proyek Game Gunting, Batu, Kertas merupakan proyek yang menyenangkan dan klasik yang menunjukkan kemampuan saya dalam pengembangan web, khususnya dalam JavaScript, HTML, dan CSS. Proyek ini menampilkan kemampuan saya dalam membuat aplikasi web interaktif dan responsif.</p>
                         </div>
 
@@ -221,7 +239,7 @@
                             <div class="rounded-xl shadow-md overflow-hidden transition-all" data-aos="fade-left">
                                 <img src="img/portofolio.png" alt="" width="w-full">
                             </div>
-                            <h3 class="font-semibold text-xl transition-all xl:text-2xl text-dark mt-5 mb-3">Portofolio Website</h3>
+                            <h3 class="font-semibold text-xl transition-all xl:text-2xl text-dark mt-5 mb-3 dark:text-white">Portofolio Website</h3>
                             <p class="font-medium text-base text-secondary transition-all">Diproject portofolio merupakan project ambisius saya yang dapat menunjukkan kemampuan saya dalam pengembangan web dinamis, HTML, CSS dengan memakai libarary tailwind, Dan juga JavaScript</p>
                         </div>
                         <!-- Add more projects as needed -->
@@ -238,13 +256,13 @@
     <!-- Portofolio Section End -->
 
     <!-- Clients Section Start -->
-    <section id="clients" class="pt-36 pb-16 bg-slate-800">
-        <div class="container">
+    <section id="clients" class="pt-36 pb-16 bg-slate-800 dark:bg-slate-950">
+        <div class="container"
             <div class="w-full px-4" data-aos="fade-up">
                 <div class="mx-auto text-center mb-16">
                     <h4 class="font-semibold text-primary text-lg mb-2 lg:text-2xl">Clients</h4>
                     <h2 class="font-bold text-slate-50 text-3xl mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama</h2>
-                    <p class="text-slate-400 font-medium text-sm md:text-lg xl:text-xl text-center mx-auto max-w-4xl">Selama perjalanan karier saya, saya telah berkesempatan untuk bekerja sama dengan berbagai klien dari berbagai industri. Berikut adalah beberapa klien yang pernah saya layani:</p>
+                    <p class="text-slate-400 font-medium text-sm md:text-lg xl:text-xl text-center mx-auto max-w-4xl ">Selama perjalanan karier saya, saya telah berkesempatan untuk bekerja sama dengan berbagai klien dari berbagai industri. Berikut adalah beberapa klien yang pernah saya layani:</p>
                 </div>
 
                 <div class="w-full px-4">
@@ -260,7 +278,7 @@
     <!-- Clients Section End -->
 
     <!-- Location Start -->
-    <section id="education" class="pt-36 pb-16">
+    <section id="education" class="pt-36 pb-16 dark:bg-dark">
         <div class="container">
                 
             <div class="w-full px-4 transition-all" data-aos="fade-up">
@@ -275,7 +293,7 @@
                 </div>
     
                 <div class="w-full px-3 pb-4 lg:w-1/2" data-aos="fade-up">
-                    <h3 class="font-semibold text-2xl lg:text-4xl xl:text-5xl text-dark mt-5 mb-3 transition-all">SMK WIRA BUANA 2 BOGOR (RPL)</h3>
+                    <h3 class="font-semibold text-2xl lg:text-4xl xl:text-5xl text-dark mt-5 mb-3 transition-all dark:text-white">SMK WIRA BUANA 2 BOGOR (RPL)</h3>
                     <p class="text-secondary text-justify text-base xl:text-md transition-all">Saya telah menempuh pendidikan di SMK Wira Buana, sebuah lembaga pendidikan yang terkemuka dalam bidang kejuruan. Selama masa pendidikan di SMK Wira Buana, saya telah mengembangkan landasan yang kokoh dalam bidang teknologi dan informatika.
                     <br><br>
                     Program pendidikan di SMK Wira Buana tidak hanya memberikan pengetahuan teoritis, tetapi juga fokus pada penerapan praktis melalui berbagai proyek dan pelatihan industri. Saya telah diperkenalkan dengan berbagai konsep dan teknologi terkini yang relevan dengan dunia kerja, seperti pengembangan web, desain grafis, dan pemrograman.</p>
@@ -293,14 +311,14 @@
    
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32" data-aos="fade-up">
-        <div class="container">
+    <section id="contact" class="pt-36 pb-32 dark:bg-dark" >
+        <div class="container" data-aos="fade-up">
             <div class="w-full px-4">
                 <div class="max-w-full mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">
                         Contact
                     </h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi saya</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Hubungi saya</h2>
                     <p class="font-medium text-md text-secondary md:text-lg max-w-4xl mx-auto">Saya selalu terbuka untuk kesempatan baru, kolaborasi, dan diskusi mengenai proyek-proyek menarik. Jika Anda memiliki pertanyaan, ingin berdiskusi lebih lanjut tentang pengalaman dan keterampilan saya, atau ingin bekerja sama dalam proyek, jangan ragu untuk menghubungi saya.</p>
 
                     
@@ -321,7 +339,7 @@
                         <textarea type="pesan" id="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
 
                         <div class="w-full px-4">
-                            <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg">Kirim</button>
+                            <button class="mt-9 text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg">Kirim</button>
                         </div>
                     </div> 
                 </form>
@@ -331,7 +349,7 @@
     <!-- Contact Section End -->
 
     <!-- Footer Section Start -->
-    <footer class="bg-dark pt-24 pb-12">
+    <footer class="bg-dark pt-24 pb-12 dark:bg-slate-950">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap">
                 <!-- Kolom Kontak Saya -->
@@ -391,7 +409,6 @@
         </div>
     </footer>
     <!-- Footer Section End -->
-
     <!-- Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
