@@ -9,6 +9,14 @@ hamburger.addEventListener('click', function(){
     navmenu.classList.toggle('hidden')
 })
 
+// Footer Year
+const footerYear = document.querySelector('#footerYear')
+
+const year = new Date().getFullYear()
+
+console.log(year)
+footerYear.innerHTML = year
+
 // Hamburger Click
 window.addEventListener('click', function(i){
     if(i.target != navmenu && i.target != hamburger){
